@@ -3,28 +3,17 @@
 <head>
 	<title></title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
-	<script src="js4angular.js"></script>
-	<script src="controllers/paraController.js"></script>
+	<script src="controllers/btnController.js"></script>
 	<link rel="stylesheet" href="main.css">
 </head>
-<body>
-	<div class="jumbo">
-		<h1 class="jumbo-header">Ahoy, dogs</h1>
+<body ng-controller="btnController">
+	<div class="popup" ng-show="popup">
+		<div class="popup-text">This is a popup.</div>
+		<div class="popup-cancel" ng-click="popup = false">Cancel</div>
 	</div>
-	<div ng-controller="paraController" class="article">
-		<img class="article-img" src="pirate_dog.jpg">
+	<div class="button" ng-click="popup = true">
+		<div class="button-text">Cliquez-ici</div>
 		
-		<a id="link1" ng-click="linkClicked('link1')" href="#">Yarrrr pirate link</a>
-
-		<h3 ng-init="appendBang('header1')" id="header1">All pirates steal things</h3>
-		<p ng-mouseenter="highlightToggle(0)" ng-mouseleave="highlightToggle(0)" ng-class="{'highlight': highlight[0]}">Strike colors barkadeer long clothes galleon cog pink fathom broadside hearties capstan. Draft skysail Jolly Roger coffer provost hempen halter wench lass aye bilge water. To go on account brigantine log square-rigged bucko schooner interloper hogshead spike matey.</p>		
-	
-		<h3 ng-init="appendBang('header2')" id="header2">Some dogs steal things</h3>
-		<p ng-mouseenter="highlightToggle(1)" ng-mouseleave="highlightToggle(1)" ng-class="{'highlight': highlight[1]}">Overhaul Letter of Marque gangplank me nipper dead men tell no tales fluke Barbary Coast lanyard sutler. Haul wind Admiral of the Black weigh anchor yawl gangway swing the lead handsomely hempen halter transom doubloon. Mizzen nipperkin Yellow Jack pinnace prow sheet barkadeer spanker hardtack man-of-war.</p>
-
-		<h3 ng-init="appendBang('header3')" id="header3">Therefore some pirates are dogs</h3>
-		<p ng-mouseenter="highlightToggle(2)" ng-mouseleave="highlightToggle(2)" ng-class="{'highlight': highlight[2]}">Long boat Gold Road aft Brethren of the Coast Davy Jones' Locker bring a spring upon her cable Pieces of Eight case shot jolly boat maroon. Cackle fruit ahoy spanker Shiver me timbers Sail ho plunder six pounders boom holystone schooner. Spike crimp chantey boom port hearties execution dock belaying pin gaff case shot.</p>
-
 	</div>
 
 </body>

@@ -2,9 +2,13 @@ orange = #e67e22
 dark-orange = #d35400
 green = #27ae60
 text-border = -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+red = #c0392b
+blue = #3498db
 
 body
+	text-align center
 	margin auto
+	line-height 100vh
 
 .highlight
 	background-color pink
@@ -31,5 +35,30 @@ body
 		height 380px
 		width 254px
 		padding-right 5px
+
+.popup
+	line-height 100px
+	position fixed
+	height 100px
+	width 200px
+	background-color red
+	&-cancel
+		color white
+		line-height initial
+		background-color blue
+		vertical-align none
+		position absolute
+		bottom 0
+		right 0
+		padding 5px	
 		
-	
+.button
+	vertical-align middle
+	display inline-block
+	height 300px
+	width 500px
+	background-color green
+	line-height 300px
+	&-text
+		display inline-block
+		vertical-align: center
