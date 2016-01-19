@@ -1,3 +1,31 @@
-.hidden {
-  display: none;
+body {
+  margin: auto;
+}
+.highlight {
+  background-color: #ffc0cb;
+}
+.jumbo {
+  margin: auto;
+  position: relative;
+  background-color: #e67e22;
+  height: 300px;
+  width: 500px;
+  border-bottom: 5px solid #d35400;
+}
+.jumbo-header {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: #27ae60;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.article {
+  width: 500px;
+  margin: auto;
+}
+.article-img {
+  float: left;
+  height: 380px;
+  width: 254px;
+  padding-right: 5px;
 }

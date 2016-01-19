@@ -1,2 +1,35 @@
-.hidden
-	display none
+orange = #e67e22
+dark-orange = #d35400
+green = #27ae60
+text-border = -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+
+body
+	margin auto
+
+.highlight
+	background-color pink
+	
+.jumbo
+	margin auto
+	position relative
+	background-color orange
+	height 300px
+	width 500px
+	border-bottom 5px solid dark-orange
+	&-header
+		position absolute
+		bottom 5px
+		right 5px
+		color green
+		text-shadow text-border
+		
+.article
+	width 500px
+	margin auto
+	&-img
+		float left
+		height 380px
+		width 254px
+		padding-right 5px
+		
+	

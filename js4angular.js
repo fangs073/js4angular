@@ -11,7 +11,7 @@
 // angular.module('app', [])
 // 	.controller('dogController', ['$scope', dogController]);
 
-function btnController($scope) {
+function pageController($scope) {
 	$scope.headerShow = false;
 	$scope.headerClick = function() {
 		$scope.headerShow = !$scope.headerShow;
@@ -28,7 +28,8 @@ function btnController($scope) {
 	]
 	
 
+
 }
 
 angular.module('app', [])
-	.controller('btnController', ['$scope', btnController]);
+	.controller('pageController', ['$scope', pageController]);
