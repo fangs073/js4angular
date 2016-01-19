@@ -12,9 +12,22 @@
 // 	.controller('dogController', ['$scope', dogController]);
 
 function btnController($scope) {
-	$scope.conLog = function() {
-		console.log('Of course you do');
+	$scope.headerShow = false;
+	$scope.headerClick = function() {
+		$scope.headerShow = !$scope.headerShow;
 	}
+	$scope.listShow = false;
+	$scope.listClick = function () {
+		$scope.listShow = !$scope.listShow
+	}
+
+	$scope.dogs = [
+			{name:'Fido', breed: 'Bergamasco'},
+			{name:'Rex', breed:'Puli'},
+			{name: 'Nikita', breed: 'Akita'}
+	]
+	
+
 }
 
 angular.module('app', [])

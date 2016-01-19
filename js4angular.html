@@ -8,14 +8,22 @@
 </head>
 <body>
 	<div class="container" ng-controller="btnController">
-		<h1 ng-class="hidden"></h1>
+		<h1 ng-show="headerShow">Of course you like dogs</h1>
 		<ul>
 
 		</ul>
 
 		<div class="button-area">
 			<p>Do you like dogs?</p>
-			<button ng-click="conLog()">Yes</button>
+			<button ng-click="headerClick()">Yes</button>
+		</div>
+
+		<div class="dog-list">
+			<h2>Please list some of your favorite dogs</h2>
+			<ul ng-show="listShow">
+				<li ng-repeat="dog in dogs"> {{ dog.name }} - {{ dog.breed }} </li>
+			</ul>
+			<button ng-click="listClick()"> Yes, dogs</button>
 		</div>
 
 	</div>
